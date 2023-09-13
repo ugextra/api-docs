@@ -160,32 +160,6 @@ Here's a high-level overview of how JWT authentication works with our API:
 
     Users can use this endpoint to securely end their current session and invalidate the JWT token.
 
-### Music Resources
-
-1. **Create Artist - `/artists` (POST):**
-
-    This endpoint allows users to create a new artist.
-
-    **Request:**
-
-    ```http
-    POST /api.ugatunes.com/artists
-    Content-Type: application/json
-    Authorization: Bearer [JWT Token]
-
-    {
-    // Artist details
-    }
-    ```
-
-    - Include artist details in the request body as needed.
-
-    **Response:**
-
-    Upon successful creation, the API will respond with a confirmation message.
-    ```json
-    ```
-    
 
 ### Artists Resources
 
