@@ -229,3 +229,68 @@ Here's a high-level overview of how JWT authentication works with our API:
     **Response:**
 
     The API will respond with a JSON array containing information about the user's favorite MP3 tracks.
+
+# Genres Resources
+
+1. **List All Genres - `/genre/all` (GET):**
+
+   This endpoint retrieves a list of all available music genres.
+
+   **Request:**
+
+   ```http
+   GET /api.ugatunes.com/genre/all
+   ```
+
+   **Response:**
+
+   The API will respond with a JSON array containing information about all available music genres.
+
+2. **Fetch a Genre - `/genre/<str:slug>` (GET):**
+
+   This endpoint allows users to fetch details of a specific music genre using its unique slug.
+
+   **Request:**
+
+   ```http
+   GET /api.ugatunes.com/genre/<str:slug>
+   ```
+
+   - Replace `<str:slug>` with the actual slug of the genre.
+
+   **Response:**
+
+   The API will respond with a JSON object containing information about the requested music genre.
+
+# Albums Resources
+
+1. **List All Albums - `/albums/all` (GET):**
+
+   This endpoint retrieves a list of all available albums.
+
+   **Request:**
+
+   ```http
+   GET /api.ugatunes.com/albums/all
+   ```
+
+   **Response:**
+
+   The API will respond with a JSON array containing information about all available albums.
+
+2. **Fetch an Album - `/albums/<str:slug>` (GET):**
+
+   This endpoint allows users to fetch details of a specific album using its unique slug.
+
+   **Request:**
+
+   ```http
+   GET /api.ugatunes.com/albums/<str:slug>
+   ```
+
+   - Replace `<str:slug>` with the actual slug of the album.
+
+   **Response:**
+
+   The API will respond with a JSON object containing information about the requested album.
+
