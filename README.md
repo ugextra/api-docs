@@ -1,4 +1,4 @@
-## **Introduction:**
+# Introduction:
 
 Welcome to the UgaTunes API, the driving force behind our mission to expose, promote, and celebrate Uganda through music. UgaTunes is more than just a music website; it's a unified Ugandan content distribution and publishing administration platform. Our goal is to empower content creators by providing the tools they need to increase their exposure and connect with audiences worldwide.
 
@@ -8,7 +8,7 @@ With this API, you can access a wealth of music, artists, albums, and genres, al
 
 In this documentation, we'll explore the resources and endpoints that enable you to tap into the essence of Uganda's music culture.
 
-## **Authentication and Tokens:**
+# Authentication and Tokens:
 
 To access the UgaTunes API, you'll need to authenticate using JSON Web Tokens (JWT). JWT is a secure and widely adopted method for authenticating users and securing API endpoints.
 
@@ -161,7 +161,7 @@ Here's a high-level overview of how JWT authentication works with our API:
     Users can use this endpoint to securely end their current session and invalidate the JWT token.
 
 
-## Artists Resources
+# Artists Resources
 
 1. **Fetch Profile - `/user/profile/<str:username>` (GET):**
 
@@ -195,7 +195,7 @@ Here's a high-level overview of how JWT authentication works with our API:
 
     The API will respond with a JSON array containing information about all available artists.
 
-## Music Resources
+# Music Resources
 
 1. **List All MP3 - `/mp3/all` (GET):**
 
