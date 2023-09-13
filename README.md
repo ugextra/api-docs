@@ -74,9 +74,9 @@ Here's a high-level overview of how JWT authentication works with our API:
 
     **Response:**
 
-    ```json
     Upon successful registration as an artist, the API will respond with a JSON object containing the following information:
 
+    ```json
     {
         "username": "yourusername",
         "email": "user@example.com",
@@ -119,9 +119,9 @@ Here's a high-level overview of how JWT authentication works with our API:
 
     **Response:**
 
-    ```json
     Upon successful login, the API will respond with a JSON object containing the following information:
 
+    ```json
     {
         "email": "user@example.com",
         "username": "yourusername",
