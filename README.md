@@ -197,70 +197,56 @@ Here's a high-level overview of how JWT authentication works with our API:
 
 # Music Resources
 
+### Music Resources
+
 1. **List All MP3 - `/mp3/all` (GET):**
 
-    This endpoint retrieves a list of all available MP3 tracks.
-
-    **Request:**
-
-    ```http
-    GET /api.ugatunes.com/mp3/all
-    ```
-
-    - You can include query parameters like `includes=approved` to filter the results.
-    - To order the results for a specific user, use query parameters like `user=<str:username>&order=asc` (replace `<str:username>` with the actual username).
-
-    **Response:**
-
-    The API will respond with a JSON array containing information about all available MP3 tracks.
-
-2. **List Favorite MP3 - `/mp3/favorites` (GET):**
-
-    This endpoint retrieves a list of MP3 tracks marked as favorites by the user.
-
-    **Request:**
-
-    ```http
-    GET /api.ugatunes.com/mp3/favorites
-    ```
-
-    - You can include query parameters or filters as needed.
-
-    **Response:**
-
-    The API will respond with a JSON array containing information about the user's favorite MP3 tracks.
-
-# Genres Resources
-
-1. **List All Genres - `/genre/all` (GET):**
-
-   This endpoint retrieves a list of all available music genres.
+   This endpoint retrieves a list of all available MP3 tracks.
 
    **Request:**
 
    ```http
-   GET /api.ugatunes.com/genre/all
+   GET /api.ugatunes.com/mp3/all
    ```
+
+   - You can include query parameters like `includes=approved` to filter the results.
+   - To order the results for a specific user, use query parameters like `user=<str:username>&order=asc` (replace `<str:username>` with the actual username).
 
    **Response:**
 
-   The API will respond with a JSON array containing information about all available music genres.
+   The API will respond with a JSON array containing information about all available MP3 tracks.
 
-2. **Fetch a Genre - `/genre/<str:slug>` (GET):**
+2. **Fetch a Music/Song - `/mp3/<str:slug>` (GET):**
 
-   This endpoint allows users to fetch details of a specific music genre using its unique slug.
+   This endpoint allows users to fetch details of a specific MP3 track or song using its unique slug.
 
    **Request:**
 
    ```http
-   GET /api.ugatunes.com/genre/<str:slug>
+   GET /api.ugatunes.com/mp3/<str:slug>
    ```
 
-   - Replace `<str:slug>` with the actual slug of the genre.
+   - Replace `<str:slug>` with the actual slug of the MP3 track or song.
 
    **Response:**
 
-   The API will respond with a JSON object containing information about the requested music genre.
+   The API will respond with a JSON object containing information about the requested MP3 track or song.
+
+3. **List Favorite MP3 - `/mp3/favorites` (GET):**
+
+   This endpoint retrieves a list of MP3 tracks marked as favorites by the user.
+
+   **Request:**
+
+   ```http
+   GET /api.ugatunes.com/mp3/favorites
+   ```
+
+   - You can include query parameters or filters as needed.
+
+   **Response:**
+
+   The API will respond with a JSON array containing information about the user's favorite MP3 tracks.
 
 # Albums Resources
 
