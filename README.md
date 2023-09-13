@@ -109,8 +109,8 @@ Here's a high-level overview of how JWT authentication works with our API:
     Content-Type: application/json
 
     {
-    "username": "yourusername",
-    "password": "yourpassword"
+        "username": "yourusername",
+        "password": "yourpassword"
     }
     ```
 
@@ -119,15 +119,15 @@ Here's a high-level overview of how JWT authentication works with our API:
 
     **Response:**
 
-    <json>
+    ```json
     Upon successful login, the API will respond with a JSON object containing the following information:
 
     {
-    "email": "user@example.com",
-    "username": "yourusername",
-    "token": "[JWT Token]"
+        "email": "user@example.com",
+        "username": "yourusername",
+        "token": "[JWT Token]"
     }
-    </json>
+    ```
 
     - `email`: The registered email address.
     - `username`: The username associated with the user's account.
@@ -150,13 +150,13 @@ Here's a high-level overview of how JWT authentication works with our API:
 
     **Response:**
 
-    <json>
     Upon successful logout, the API will respond with a confirmation message:
 
+    ```json    
     {
-    "message": "Logout successful."
+        "message": "Logout successful."
     }
-    </json>
+    ```
 
     Users can use this endpoint to securely end their current session and invalidate the JWT token.
 
@@ -182,8 +182,10 @@ Here's a high-level overview of how JWT authentication works with our API:
 
     **Response:**
 
-    <json>
     Upon successful creation, the API will respond with a confirmation message.
+    ```json
+    ```
+    
 
 ### Artists Resources
 
